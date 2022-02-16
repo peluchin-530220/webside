@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora(Peluchin)</title>
+   <link rel="stylesheet" href="./stylecss/figura.css">
+ <body class="body">
+     <nav class="nav">
+        <img class="marca" src="./figuras/marca.png" alt="marca">
+        
+         
+       <div>
+        <a  href="https://www.youtube.com/watch?v=RFAc6SJT110" ><img class="a1" src="./figuras/youtube.png" alt="youtube">   </a>
+        <a href="mailto:peluchin.salas2000@gmail.com"><img class="a2" src="./figuras/gmail.png" alt="email"> </a>
+        <a href="https://www.google.com/search?gs_ssp=eJzj4tLP1TfIyK1MKy5TYDRgdGDw4khLTE5Nys_PBgBmYAfL&q=facebook&rlz=1C1UUXU_esBO975BO975&oq=fac&aqs=chrome.1.69i59j46i39i199i291j69i57j69i60l5.1855j0j7&sourceid=chrome&ie=UTF-8"> <img class="a3" src="./figuras/facebook.png" alt="facebook"></a>
+       </div>
+        
+    
+     
+     </nav>
+ <main class="main">
+    <div>
+        <h1>CALCULADORA GEOMETRICA Y PORCENTAGE CON DESCUENTO</h1>
+        
+    </div>
+    <div class="contenedor">
+        
+        
+       <div class="subtitulo">
+           <div class="subtitulo-interno">
+            <img src="./figuras/—Pngtree—square frame_5054164.png" alt="cuadrado">
+            <p>Perimetrto de un cuadrado</p>
+           </div>
+           <div>
+              
+            <form class="form" action="">
+             <label >
+               <p class="span">Coloque un lado del cuadrado</p>
+                <input class="formulario" type="text" id="cuadrado" placeholder="Lado">
+                <div class="boton1">
+                    <button class="boton" type="button" onclick="perimetroCuadrado()">Calcular</button>
+                </div>
+                <input class="input-res" type="text" id="respuest" placeholder="respuesta">
+             </label>
+             
+            </form>
+            
+           
+        </div>
+       </div>
+
+       <div class="subtitulo2">
+        <div class="subtitulo-interno">
+         <img src="./figuras/—Pngtree—square frame_5054164.png" alt="cuadrado">
+         <p>Area del cuadrado</p>
+        </div>
+        <div>
+         <form class="form" action="">
+          <label>
+            <p class="span">Coloque un lado del cuadrado</p>
+             <input class="formulario" type="text" id="AreaCuadrado" placeholder="Lado"><br>
+             <div class="boton1">
+                <button class="boton" type="button" onclick="areaCuadrado()">Calcular</button>
+            </div>
+             <input class="input-res" type="text" id="res" placeholder="resultado">
+          </label>
+          
+         </form>
+        
+        
+     </div>
+    </div>
+   
+    <div class="subtitulo3">
+        <div class="subtitulo-interno1">
+         <img src="./figuras/triangulo.png" alt="cuadrado">
+         <p class="p1">Perimetrto del triangulo</p>
+        </div>
+        <div>
+         <form class="form" action="">
+          <label>  
+              <span class="span">coloque los tres lados del triangulo</span><br>
+             <input class="formulario" type="text" id="PerimetroTriangulo1" placeholder="Lado-1"><br>
+             <input class="formulario" type="text" id="PerimetroTriangulo2" placeholder="Lado-2"><br>
+             <input class="formulario" type="text" id="PerimetroTriangulo3" placeholder="Lado 3"><br>
+             <div class="boton2">
+                <button class="boton" type="button" onclick="perimetroTriangulo()">Calcular</button>
+             </div>
+             <input class="input-res" type="text" id="respuesta" placeholder="resultado">
+          </label>
+     
+         </form>
+         
+        
+     </div>
+    </div>
+
+    <div class="subtitulo4">
+        <div class="subtitulo-interno1">
+         <img src="./figuras/triangulo.png" alt="cuadrado">
+         <p class="p1">area del triangulo</p>
+        </div>
+        <div>
+         <form class="form" action="">
+          <label>
+             <span class="span">Coloque la base y altura</span><br>
+             <input class="formulario" type="text" id="AreaTriangulo1" placeholder="Base"><br>
+             <input class="formulario" type="text" id="AreaTriangulo2" placeholder="Altura"><br>
+             <div class="boton1">
+                <button class="boton" type="button" onclick="areaTriangulo()">Calcular</button>
+            </div>
+             <input class="input-res" type="text" id="res1" placeholder="resultado">
+            
+          </label>
+          
+         </form>
+         
+        
+     </div>
+    </div>
+
+    <div class="subtitulo5">
+        <div class="subtitulo-interno">
+         <img src="./figuras/circulo.png" alt="cuadrado">
+         <p>Diametro del circulo</p>
+        </div>
+        <div>
+         <form class="form" action="">
+          <label>
+            <span class="span">Coloque el radio del circulo</span><br>
+             <input class="formulario" type="text" id="Dcirculo" placeholder="Radio"><br>
+             <div class="boton1">
+                <button class="boton" type="button" onclick="diametroCirculo()">Calcular</button>
+            </div>
+             <input class="input-res" type="text" id="resp" placeholder="resultado">
+          </label>
+         
+         </form>
+        
+        
+     </div>
+    </div>
+
+    <div class="subtitulo6">
+        <div class="subtitulo-interno">
+         <img src="./figuras/circulo.png" alt="cuadrado">
+         <p>Perimetro del circulo</p>
+        </div>
+        <div>
+         <form class="form" action="">
+          <label for="cuadrado">
+             <span class="span">Coloque el radio del circulo</span><br>
+             <input class="formulario" type="number" id="radi" placeholder="Radio"><br>
+             <div class="boton1">
+                <button class="boton" type="button" onclick="perimetroCirculo()" >Calcular</button>
+            </div>
+             <input class="input-res" type="text" id="respt" placeholder="resultado">
+          </label>
+          
+         </form>
+      
+        
+     </div>
+    </div>
+
+    <div class="subtitulo7">
+        <div class="subtitulo-interno">
+         <img src="./figuras/circulo.png" alt="cuadrado">
+         <p>Area del circulo</p>
+        </div>
+        <div>
+         <form class="form" action="">
+          <label>
+             <span class="span">Coloque el radio del circulo</span><br>
+             <input class="formulario" type="text" id="areaCirculo" placeholder="Radio"><br>
+             <div class="boton1">
+                <button class="boton" type="button" onclick="AreaCirculo()">Calcular</button>
+            </div>
+             <input class="input-res" type="text" id="resultado" placeholder="resultado">
+          </label>
+          
+         </form>
+         
+        
+     </div>
+    </div>
+
+    <div class="subtitulo8">
+        <div class="subtitulo-interno">
+         <img src="./figuras/rombo.png" alt="cuadrado">
+         <p>Area del rombo</p>
+        </div>
+        <div>
+         <form class="form" action="">
+          <label>
+             <span class="span">Coloque la altura y el ancho del Rombo</span><br>
+             <input class="formulario" type="text" id="areaRombo1" placeholder="Altura"><br>
+             <input class="formulario" type="text" id="areaRombo2" placeholder="Ancho"><br>
+             <div class="boton2">
+                <button class="boton" type="button" onclick="areaRombo()">Calcular</button>
+            </div>
+             <input class="input-res" type="text" id="resultado1" placeholder="resultado">
+          </label>
+         
+         </form>
+         
+        
+     </div>
+    </div>
+    
+    </div>
+    <div class="porcentage1">
+        <h1>Porcentaje y Descuento</h1>
+    </div>
+    
+
+    <div class="container-descuento">
+
+        <div class="subtitulo9">
+            <div class="subtitulo-interno">
+             <img src="./figuras/descuento.png" alt="cuadrado">
+             <p>ventas</p>
+            </div>
+            <div>
+            
+                <form class="form" action="">
+                    <label for="inputPrice">Escribe el precio del producto</label><br>
+                    <input class="formulario" type="number" id="inputPrice" placeholder="Precio"/><br>
+                    
+                    <label for="inputDiscount">Escribe el descuento del producto</label><br>
+                    <input class="formulario" type="number" id="inputDiscount" placeholder="Descuento (%)"/><br>
+                    <div class="boton2">
+                        <button class="boton" type="button" onclick="onClickPriceDiscount()">Calcular</button>
+                    </div>
+                   
+               
+                <p id="resultPrice"></p>
+                 </form>
+            
+         </div>
+        </div>
+
+    </div>
+
+
+
+ <div class="text-juego">
+  <h1>Hora de jugar con un reto</h1>
+  <p>Atrapa a los conejitos en el menor tiempo posible</p>
+  <p>Suerte!</p>
+</div>
+
+<div class="container-phone">
+  <div class="phone">
+    <div class="layer-1">
+      <input type="checkbox" />
+      <div class="ear_left"></div>
+      <div class="ear_right"></div>
+      <div class="head"></div>
+    </div>
+    <div class="layer-2">
+      <input type="checkbox" />
+      <div class="ear_left"></div>
+      <div class="ear_right"></div>
+      <div class="head"></div>
+    </div>
+    <div class="layer-3"></div>
+    <div class="layer-4">
+      <input type="checkbox" />
+      <div class="ear_left"></div>
+      <div class="ear_right"></div>
+      <div class="head"></div>
+    </div>
+    <div class="layer-5"></div>
+    <div class="layer-6">
+      <input type="checkbox" />
+      <div class="ear_left"></div>
+      <div class="ear_right"></div>
+      <div class="head"></div>
+    </div>
+    <div class="layer-7"></div>
+    <div class="layer-8">
+      <div class="grass"></div>
+    </div>
+    <div class="layer-9"></div>
+    <div class="layer-10"></div>
+    <div class="title">
+      <div class="score">
+        Score: 
+      </div>
+    </div>
+  </div>
+</div>
+
+ </main>
+    <script src="./javaScrip/figuras.js"></script>
+    
+</body>
+</html>
